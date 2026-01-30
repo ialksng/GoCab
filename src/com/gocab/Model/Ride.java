@@ -7,16 +7,16 @@ public class Ride {
     public String source;
     public String destination;
     public int totalSeats;
-    public int avaliableSeats;
+    public int availableSeats;
     public double fare;
 
 
-    public Ride(int userId, String source, String destination, int totalSeats, int avaliableSeats, double fare) {
+    public Ride(int userId, String source, String destination, int totalSeats, int availableSeats, double fare) {
         this.userId = userId;
         this.source = source;
         this.destination = destination;
         this.totalSeats = totalSeats;
-        this.avaliableSeats = avaliableSeats;
+        this.availableSeats = availableSeats;
         this.fare = fare;
     }
 
@@ -25,8 +25,8 @@ public class Ride {
         return "Ride{" +
                 "source='" + source + '\'' +
                 ", destination='" + destination + '\'' +
-                ", total_seats=" + totalSeats +
-                ", avaliable_seats=" + avaliableSeats +
+                ", totalSeats=" + totalSeats +
+                ", availableSeats=" + availableSeats +
                 ", fare=₹" + fare +
         '}';
     }
